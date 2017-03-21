@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/listlatest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </WebView>
+     <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/locrefresh_off"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical" />
+        <Button
+            android:id="@+id/locBtn"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:text="현재위치"
+            android:textSize="12dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_normal"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:id="@+id/alignImg1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/listcheck_off"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical" />
+        <Button
+            android:id="@+id/locAlignBtn"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:text="거리순"
+            android:textSize="12dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_normal"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:id="@+id/alignImg2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/listcheck_off"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical" />
+        <Button
+            android:id="@+id/hitAlignBtn"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:text="방문순"
+            android:textSize="12dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_normal"
+
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:id="@+id/alignImg3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/listcheck_off"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical" />
+        <Button
+            android:id="@+id/signAlignBtn"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:text="최신순"
+            android:textSize="12dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_normal"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+</LinearLayout>

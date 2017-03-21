@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">청주쿠폰</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_1">a_1</string>
+    <string name="free_title">무료업체등록</string>
+    <string name="free_com_name">업체명</string>
+    <string name="free_com_contact">연락처</string>
+    <string name="send">등록하기</string>
+    <string name="pushTitle">푸시설정</string>
+    <string name="pushDesc">현재 사용하고 계신 안드로이드 폰의 알림을 ON/OFF하여 푸시알림에대한 설정이 가능합니다.</string>
+    <string name="msg_token_fmt">FCMTEST</string>
+    <string name="no_permission">권한설정</string>
+    <string name="str_done">완료</string>
+
+</resources>

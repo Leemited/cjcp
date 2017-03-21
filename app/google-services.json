@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "1071069801122",
+    "firebase_url": "https://cjcp-64a25.firebaseio.com",
+    "project_id": "cjcp-64a25",
+    "storage_bucket": "cjcp-64a25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071069801122:android:a1825c2895ea27df",
+        "android_client_info": {
+          "package_name": "com.cjcp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071069801122-nm4ifc2envh7t79kth6sqdi2npm3qq87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cjcp",
+            "certificate_hash": "6D7DBEA497AB7C4353BF781002954F44EDD4247C"
+          }
+        },
+        {
+          "client_id": "1071069801122-6fnu936jre66em4216isdb6jl7no6pep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBksEZPgfzAURX1tXTBWdDl-pTjF1al72c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

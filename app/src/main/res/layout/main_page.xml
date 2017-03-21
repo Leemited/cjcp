@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/inc_main"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="오늘이용 : "
+            android:background="#FFF"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/vi_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="로드중"
+            android:background="#FFF"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:text="|"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:textSize="11dp"
+            android:textColor="#dddddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="전체이용 : "
+            android:background="#FFF"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/vi_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="로드중"
+            android:background="#FFF"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:text="|"
+            android:textSize="11dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="#dddddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="현재이용 : "
+            android:background="#FFF"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/vi_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="로드중"
+            android:background="#FFF"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:id="@+id/bannerView"
+        android:background="#FFFFFF" />
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabhost"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:id="@+id/floatingActionButton"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    app:elevation="2dp"
+                    app:srcCompat="@drawable/top_text"
+                    app:backgroundTint="@color/colorPrimary"
+                    tools:ignore="RtlHardcoded"
+                    android:padding="0dp"
+                    android:background="@drawable/btn_normal" />
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listmain1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ListView>
+
+                    <TextView
+                        android:id="@+id/listEmpty1"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:text="조건에 해당하는 목록이 없습니다."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listmain2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ListView>
+                    <TextView
+                        android:id="@+id/listEmpty2"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:text="조건에 해당하는 목록이 없습니다."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listmain3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ListView>
+                    <TextView
+                        android:id="@+id/listEmpty3"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:text="조건에 해당하는 목록이 없습니다."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listmain4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ListView>
+                    <TextView
+                        android:id="@+id/listEmpty4"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:text="조건에 해당하는 목록이 없습니다."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listmain5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ListView>
+                    <TextView
+                        android:id="@+id/listEmpty5"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:text="조건에 해당하는 목록이 없습니다."/>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

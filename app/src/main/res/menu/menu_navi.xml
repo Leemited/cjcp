@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+        <item android:id="@+id/action_home" android:title="메인화면" android:icon="@drawable/categorize" />
+        <item android:id="@+id/action_help" android:title="사용방법" android:icon="@drawable/user_manual"/>
+        <item android:id="@+id/action_intro" android:title="회사소개" android:icon="@drawable/employee_card"/>
+        <item android:id="@+id/action_free" android:title="무료입점요청" android:icon="@drawable/shop"/>
+        <item android:id="@+id/action_inquiry" android:title="지사문의" android:icon="@drawable/handshake"/>
+        <item android:id="@+id/action_push" android:title="푸시설정" android:icon="@drawable/toggle"/>
+    </group>
+</menu>
